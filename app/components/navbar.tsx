@@ -1,14 +1,23 @@
-import { FunctionComponent } from "react";
+import React, { FunctionComponent } from "react";
+
+interface NavbarItem {
+  text?: String;
+  url: String;
+  icon: React.ReactElement;
+}
 
 interface NavbarProps {
-  items: {
-    text: String;
-    url: String;
-  };
+  brandText: String;
+  items: NavbarItem[];
 }
 
 const Navbar: FunctionComponent<NavbarProps> = (props) => {
-  return <nav className="bg-red-50">test</nav>;
+  return (
+    <nav className="bg-slate-100">
+      <h1>{props.brandText}</h1>
+      <div></div>
+    </nav>
+  );
 };
 
 export default Navbar;
