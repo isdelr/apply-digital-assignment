@@ -32,7 +32,7 @@ This section details how each requirement from the `CHALLENGE.md` was implemente
 
 ### Vercel and Github repo links
 
-Vercel deployment:[https://apply-digital-assignment.vercel.app](https://apply-digital-assignment.vercel.app)
+Vercel deployment: [https://apply-digital-assignment.vercel.app](https://apply-digital-assignment.vercel.app)
 
 Github link: [https://github.com/isdelr/apply-digital-assignment](https://github.com/isdelr/apply-digital-assignment)
 
