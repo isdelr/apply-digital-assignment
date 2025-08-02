@@ -1,7 +1,7 @@
 import CatalogHeader from "@/components/home/catalog-header";
 import { getGames } from "./services/games";
-import CatalogGrid from "./components/home/catalog-grid";
-import Button from "./components/ui/button";
+import CatalogGrid from "@/components/home/catalog-grid";
+import Button from "@/components/ui/button";
 
 export default async function Home() {
   const data = await getGames();
