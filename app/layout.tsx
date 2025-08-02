@@ -2,15 +2,14 @@ import type { Metadata } from "next";
 import { Archivo } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/shared/navbar";
-import CartIcon from "@/public/icons/cart.svg";
 import Footer from "@/components/shared/footer";
+import CartIcon from "@/public/icons/cart.svg";
 
-// Font defined in the Figma design
 const archivo = Archivo({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Apply Digital Test",
-  description: "Frontend development test for Apply Digital",
+  title: "GamerShop",
+  description: "A frontend test for Apply Digital",
 };
 
 export default function RootLayout({
@@ -20,10 +19,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={archivo.className}>
-        <Navbar brandText="GamerShop" homeRoute="/" items={[{ icon: CartIcon, text: "Cart", url: "/cart" }]} />
-        {children}
-        <Footer/>
+      <body className={`${archivo.className} flex flex-col h-dvh`}>
+        <Navbar
+          brandText="GamerShop"
+          homeRoute="/"
+          items={[
+            {
+              url: "/cart",
+              icon: CartIcon,
+              text: "Cart",
+            },
+          ]}
+        />
+        <main className="flex-grow">{children}</main>
+        <Footer />
       </body>
     </html>
   );

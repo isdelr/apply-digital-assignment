@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Footer: FunctionComponent = () => {
   return (
-    <footer className="py-16 bg-bg-neutral flex justify-center">
+    <footer className="py-16 bg-bg-neutral flex justify-center mt-auto">
       <Link href="/">
         <Icon icon={Logo} className="w-40 h-auto" />
       </Link>
