@@ -17,7 +17,7 @@ interface NavbarProps {
 
 const Navbar: FunctionComponent<NavbarProps> = (props) => {
   return (
-    <nav className="bg-surface-secondary px-6 py-5 md:px-28  flex justify-between items-center">
+    <nav className="bg-surface-secondary px-6 py-5 lg:px-28  flex justify-between items-center">
       <Link href={props.homeRoute} aria-label={props.brandText}>
         <h1 className="text-2xl font-bold text-bg-primary hover:text-text-primary">
           {props.brandText}

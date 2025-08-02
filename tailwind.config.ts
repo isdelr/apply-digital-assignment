@@ -16,10 +16,6 @@ const config: Config = {
         "stroke-tertiary": "#EFEDF3",
         "text-primary": "#3B3B3B",
         "text-secondary": "#737373",
-      },
-      borderWidth: {
-        "card": "0.5px",
-        "cta": "1px",
       }
     },
   },

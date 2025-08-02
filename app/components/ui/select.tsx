@@ -1,6 +1,6 @@
 import { FunctionComponent, SelectHTMLAttributes } from "react";
 import Icon from "@/components/ui/icon";
-import ChevronIcon from "@/assets/icons/chevron.svg";
+import ChevronIcon from "@/public/icons/chevron.svg";
 
 type SelectProps = SelectHTMLAttributes<HTMLSelectElement>;
 
@@ -9,7 +9,7 @@ const Select: FunctionComponent<SelectProps> = ({ children, ...props }) => {
     <div className="relative w-full">
       <select
         {...props}
-        className={`${props.className} appearance-none w-full pr-10`}
+        className={`${props.className} appearance-none w-full pr-10 placeholder:text-text-primary placeholder:text-xl`}
       >
         {children}
       </select>
