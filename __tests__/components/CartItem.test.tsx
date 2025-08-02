@@ -1,5 +1,5 @@
 import { render, screen, fireEvent } from "@testing-library/react";
-import CartItem from "../../app/components/cart/cart-item";
+import CartItem from "../../components/cart/cart-item";
 import { useCartStore } from "../../app/store/cart";
 import { expect, test, describe, vi, Mock } from "vitest";
 
@@ -28,7 +28,6 @@ describe("CartItem", () => {
     const prices = screen.getAllByText("$59.99");
     expect(prices.length).toBeGreaterThan(0);
 
-    // Fix: Use getAllByText to handle multiple description elements
     const descriptions = screen.getAllByText("A test game");
     expect(descriptions.length).toBeGreaterThan(0);
 

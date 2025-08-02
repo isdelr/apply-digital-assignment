@@ -1,5 +1,5 @@
 import { render, screen, fireEvent } from "@testing-library/react";
-import CatalogGridItem from "../../app/components/home/catalog-grid-item";
+import CatalogGridItem from "../../components/home/catalog-grid-item";
 import { useCartStore } from "../../app/store/cart";
 import { expect, test, describe, vi, Mock } from "vitest";
 
