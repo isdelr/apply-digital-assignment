@@ -38,7 +38,7 @@ export async function GET(request: Request) {
   if (page > totalPages && totalPages > 0) page = totalPages;
 
 
-  await delay(2000);
+  await delay(1000);
 
   const fromIndex = (page - 1) * ITEMS_PER_PAGE;
   const toIndex = fromIndex + ITEMS_PER_PAGE;
