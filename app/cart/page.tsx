@@ -18,7 +18,7 @@ export default function CartPage() {
           href="/"
           className="flex items-center gap-2 text-stroke-primary font-medium w-fit"
         >
-          <Icon icon={ArrowLeftIcon} className="size-4" />
+          <Icon icon={ArrowLeftIcon} className="size-3" />
           <span>Back to Catalog</span>
         </Link>
       </div>

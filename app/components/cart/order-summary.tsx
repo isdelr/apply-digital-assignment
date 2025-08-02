@@ -21,7 +21,7 @@ const OrderSummary: FunctionComponent<OrderSummaryProps> = ({ items }) => {
           <p className="text-lg text-text-secondary">{items.length} items</p>
         </div>
 
-        <div className="flex flex-col gap-4 py-5 border-t border-b border-gray-300">
+        <div className="flex flex-col gap-4 py-5  border-b border-gray-300">
           {items.map((item) => (
             <div
               key={item.id}
@@ -33,7 +33,7 @@ const OrderSummary: FunctionComponent<OrderSummaryProps> = ({ items }) => {
           ))}
         </div>
 
-        <div className="flex justify-between items-center font-bold text-xl text-stroke-primary">
+        <div className="flex justify-between items-center font-bold text-xl text-stroke-primary pb-12">
           <span>Order Total</span>
           <span>${total.toFixed(2)}</span>
         </div>
