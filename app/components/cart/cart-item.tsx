@@ -49,12 +49,12 @@ const CartItem: FunctionComponent<CartItemProps> = ({ item }) => {
           onClick={() => removeFromCart(item.id)}
           className="flex-shrink-0"
         >
-          <Icon icon={XIcon} className="size-4 text-gray-500" />
+          <Icon icon={XIcon} className="size-3 text-gray-500" />
         </button>
       </div>
 
       {/* Text and Price for Mobile */}
-      <div className="flex flex-col lg:hidden gap-5">
+      <div className="flex flex-col lg:hidden gap-11">
         <div className="flex flex-col gap-3">
           <span className="font-bold text-sm text-text-secondary">
             {item.genre.toUpperCase()}

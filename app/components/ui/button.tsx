@@ -4,7 +4,7 @@ const DEFAULT_STYLING = "py-5 px-24 font-bold rounded-lg";
 
 const variants = {
   primary: `${DEFAULT_STYLING} border border-stroke-primary bg-transparent text-text-primary hover:bg-stroke-primary hover:text-white`,
-  secondary: `${DEFAULT_STYLING} bg-stroke-primary hover:bg-text-secondary text-white`,
+  secondary: `${DEFAULT_STYLING} bg-bg-primary hover:bg-bg-neutral text-white`,
 };
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
