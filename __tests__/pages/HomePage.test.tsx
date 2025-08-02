@@ -62,7 +62,6 @@ describe("Home Page", () => {
     });
 
     await waitFor(() => {
-      // Fix: Assert that getAllByText returns a non-empty array instead of using toBeInTheDocument on an array.
       expect(screen.getAllByText("Game 1").length).toBeGreaterThan(0);
       expect(screen.getAllByText("Game 12").length).toBeGreaterThan(0);
     });
@@ -76,7 +75,6 @@ describe("Home Page", () => {
     render(<Home />);
 
     await waitFor(() => {
-      // Fix: Assert that getAllByText returns a non-empty array.
       expect(screen.getAllByText("Game 1").length).toBeGreaterThan(0);
     });
 
@@ -84,7 +82,6 @@ describe("Home Page", () => {
     fireEvent.click(seeMoreButton);
 
     await waitFor(() => {
-      // Fix: Use getAllByText for consistency and to avoid errors if multiple elements are found.
       expect(screen.getAllByText("Game 13").length).toBeGreaterThan(0);
       expect(screen.getAllByText("Game 20").length).toBeGreaterThan(0);
     });
@@ -97,7 +94,6 @@ describe("Home Page", () => {
   });
 
   test("should refetch games when genre filter changes", async () => {
-    // Fix: Use mockReset() to clear the mock implementation from beforeEach.
     vi.mocked(gameService.getGames).mockReset();
 
     const mockRpgGames = {
@@ -129,7 +125,6 @@ describe("Home Page", () => {
     });
 
     await waitFor(() => {
-      // Fix: Use getAllByText to be safe.
       expect(screen.getAllByText("Final Fantasy XV").length).toBeGreaterThan(0);
     });
   });

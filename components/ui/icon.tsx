@@ -6,7 +6,7 @@ interface IconProps extends React.SVGProps<SVGSVGElement> {
 }
 
 const Icon: React.FC<IconProps> = ({ icon: SvgIcon, className, ...props }) => {
-  // Defensive check for testing environment
+
   if (!SvgIcon || typeof SvgIcon !== 'function') {
     return <svg className={className} {...props} data-testid="fallback-icon" />;
   }

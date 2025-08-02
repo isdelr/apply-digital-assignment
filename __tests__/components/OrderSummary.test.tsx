@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import OrderSummary from "../../app/components/cart/order-summary";
+import OrderSummary from "../../components/cart/order-summary";
 import { expect, test, describe } from "vitest";
 
 const mockItems = [
