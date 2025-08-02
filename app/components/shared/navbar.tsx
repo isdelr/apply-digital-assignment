@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React, { FunctionComponent } from "react";
-import Icon from "./icon";
+import Icon from "@/components/ui/icon";
 import { UrlObject } from "url";
 
 interface NavbarItem {
